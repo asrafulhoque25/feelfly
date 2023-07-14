@@ -1,0 +1,245 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      - 
+ * @created_by  - Ashiqur Rahman
+ * @created_at  - 
+ * @modified_by -
+ */
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+/* fonts import -END */
+/* reset, root */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Rubik', sans-serif !important; }
+
+:root {
+  --teal:#003445;
+  --blue:#B4ECFF;
+  --deepBlue:#009FD3;
+  --paleBlue:#E0ECF0;
+  --ash:#EEEDE9;
+  --yellow:#F8D448; }
+
+/* reset, root - END */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1134px; } }
+
+/* helper , base classes */
+.text-clr-teal {
+  color: var(--teal); }
+
+.text-clr-blue {
+  color: var(--blue); }
+
+.text-clr-deepBlue {
+  color: var(--deepBlue); }
+
+.text-clr-paleBlue {
+  color: var(--paleBlue); }
+
+.text-clr-ash {
+  color: var(--ash); }
+
+.text-clr-yellow {
+  color: var(--yellow); }
+
+.bg-clr-columbiablue {
+  background-color: var(--columbiablue); }
+
+.fs-14 {
+  font-size: 14px;
+  line-height: 22px; }
+
+.fs-30 {
+  font-size: 30px;
+  line-height: 40px; }
+
+.fs-36 {
+  font-size: 36px;
+  line-height: 46px; }
+
+.fs-54 {
+  font-size: 54px;
+  line-height: 3.37rem; }
+
+.fw-medium {
+  font-weight: 500; }
+
+.fw-semi-bold {
+  font-weight: 600; }
+
+.box-shadow {
+  box-shadow: 0px 15px 40px rgba(22, 8, 49, 0.1); }
+
+.box-shadow2 {
+  box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05); }
+
+.radius-10 {
+  border-radius: 10px; }
+
+.radius-16 {
+  border-radius: 16px; }
+
+/* helper , base classes  - END*/
+/* header  - start*/
+.header {
+  position: absolute;
+  width: 100%;
+  top: 41px;
+  z-index: 999;
+  background-color: var(--deep-dark);
+  transition: all 0.2s linear;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03); }
+  .header.sticky {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 666;
+    animation: menuAnimation .4s linear; }
+@keyframes menuAnimation {
+  100% {
+    transform: translateY(0px); }
+  0% {
+    transform: translateY(-110px); } }
+  @media (max-width: 520px) {
+    .header {
+      top: 0; } }
+  .header nav,
+  .header .navbar-brand img {
+    transition: all 0.2s linear; }
+  .header .navbar-nav .nav-item .nav-link {
+    padding: 13px 10px; }
+    .header .navbar-nav .nav-item .nav-link::after {
+      transition: .2s all linear; }
+    .header .navbar-nav .nav-item .nav-link:hover::after {
+      transform: rotate(180deg); }
+    @media (max-width: 1200px) {
+      .header .navbar-nav .nav-item .nav-link {
+        padding: 13px 0px; } }
+  .header .navbar-nav .nav-item.custom-dropdown {
+    position: relative; }
+    .header .navbar-nav .nav-item.custom-dropdown .dropArrow {
+      visibility: hidden;
+      opacity: 0;
+      text-align: center;
+      left: 0;
+      right: 0;
+      width: 100%;
+      top: 50px; }
+      @media (max-width: 1200px) {
+        .header .navbar-nav .nav-item.custom-dropdown .dropArrow {
+          text-align: left !important;
+          left: 5% !important; } }
+    .header .navbar-nav .nav-item.custom-dropdown:hover .custom-dropdown-menu {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      display: block;
+      z-index: 5555; }
+      .header .navbar-nav .nav-item.custom-dropdown:hover .custom-dropdown-menu.mega-menu1 {
+        top: 60px; }
+        @media (max-width: 1200px) {
+          .header .navbar-nav .nav-item.custom-dropdown:hover .custom-dropdown-menu.mega-menu1 {
+            top: 45px; } }
+    .header .navbar-nav .nav-item.custom-dropdown:hover .dropArrow {
+      visibility: visible;
+      opacity: 1;
+      top: 45px; }
+      @media (max-width: 1200px) {
+        .header .navbar-nav .nav-item.custom-dropdown:hover .dropArrow {
+          top: 28px; } }
+      @media (max-width: 768px) {
+        .header .navbar-nav .nav-item.custom-dropdown:hover .dropArrow img {
+          margin-bottom: -5px; } }
+    .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      display: none;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      transition: opacity .2s all linear; }
+      .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1 {
+        position: absolute;
+        min-width: 608px;
+        left: -16px;
+        top: 80px; }
+        @media (max-width: 1200px) and (min-width: 300px) {
+          .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1 {
+            left: -5px; } }
+        .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1 .widget-menu-list li a {
+          padding-left: 24px; }
+        .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1 .widget-menu-list li:hover a {
+          padding-left: 29px !important;
+          background: linear-gradient(90deg, #ED1C24 0%, #F99E1C 100%);
+          padding-left: 5px; }
+          .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1 .widget-menu-list li:hover a span {
+            color: #fff !important; }
+        .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1 .widget-menu-list a {
+          transition: all 0.2s linear; }
+        .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1.mega-menu2 {
+          min-width: 209px;
+          padding: 0; }
+          @media (max-width: 1200px) {
+            .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1.mega-menu2 {
+              margin: initial; } }
+          .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1.mega-menu2 .m-menu-widget2 .widget-menu-list a {
+            transition: all 0.2s linear; }
+            .header .navbar-nav .nav-item.custom-dropdown .custom-dropdown-menu.mega-menu1.mega-menu2 .m-menu-widget2 .widget-menu-list a:hover {
+              color: var(--primary); }
+  .header .navbar-nav .nav-item .nav-link {
+    transition: all 0.2s ease; }
+    .header .navbar-nav .nav-item .nav-link.active, .header .navbar-nav .nav-item .nav-link:focus, .header .navbar-nav .nav-item .nav-link:hover {
+      color: var(--primary); }
+  .header .navbar-toggler {
+    box-shadow: none;
+    outline: none; }
+    .header .navbar-toggler img {
+      width: 36px; }
+  .header.fixed-header {
+    position: fixed; }
+    .header.fixed-header nav {
+      padding: 8px 0 20px 0 !important; }
+    .header.fixed-header .navbar-brand img {
+      transform: scale(0.9); }
+  .header .card-count {
+    height: 16px;
+    width: 16px;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: -6px; }
+  .header .card-notify {
+    height: 10px;
+    width: 10px;
+    background-color: var(--secondary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    border: 2px solid #fff; }
+
+/* header  - END*/
+
+/*# sourceMappingURL=style.css.map */
