@@ -108,7 +108,6 @@ body {
     color: var(--purple);
 }
 
-
 .text-clr-dark1 {
     color: var(--dark1);
 }
@@ -197,11 +196,18 @@ body {
 .fs-48 {
     font-size: 48px;
 
+    @media(max-width: 768px) {
+        font-size: 38px;
+    }
+
+    @media(max-width: 550px) {
+
     @media (max-width: 768px) {
         font-size: 38px;
     }
 
     @media (max-width: 576px) {
+
         font-size: 28px;
     }
 }
@@ -801,9 +807,6 @@ a {
     }
 }
 
-/*loading - END*/
-
-/*loading - END*/
 
 // single-blog =start
 .featured-img {
