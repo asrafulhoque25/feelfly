@@ -38,6 +38,7 @@ body {
     --danger: #ff2e00;
     --dark1: #0D1525;
     --dark2: #4B566B;
+    --purple: #0052CC;
 }
 
 /* reset, root - END */
@@ -101,6 +102,9 @@ body {
 .text-clr-dark2 {
     color: var(--dark2);
 }
+.text-clr-purple {
+    color: var(--purple);
+}
 
 // BG color
 .bg-clr-teal {
@@ -129,6 +133,9 @@ body {
 
 .bg-clr-danger {
     background-color: var(--danger);
+}
+.bg-clr-purple {
+    background-color: var(--purple);
 }
 .fs-12 {
     font-size: 12px;

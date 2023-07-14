@@ -7,7 +7,7 @@
 
 body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans-serif !important; }
 
-:root { --teal: #003445; --darkTeal: #00222d; --blue: #b4ecff; --deepBlue: #009fd3; --lightBlue: #97ccdd; --paleBlue: #e0ecf0; --ash: #eeede9; --yellow: #f8d448; --gray: #5d737a; --danger: #ff2e00; --dark1: #0D1525; --dark2: #4B566B; }
+:root { --teal: #003445; --darkTeal: #00222d; --blue: #b4ecff; --deepBlue: #009fd3; --lightBlue: #97ccdd; --paleBlue: #e0ecf0; --ash: #eeede9; --yellow: #f8d448; --gray: #5d737a; --danger: #ff2e00; --dark1: #0D1525; --dark2: #4B566B; --purple: #0052CC; }
 
 /* reset, root - END */
 @media (min-width: 1400px) { .container { max-width: 1380px; } }
@@ -37,6 +37,8 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 .text-clr-dark2 { color: var(--dark2); }
 
+.text-clr-purple { color: var(--purple); }
+
 .bg-clr-teal { background-color: var(--teal); }
 
 .bg-clr-blue { background-color: var(--blue); }
@@ -50,6 +52,8 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .bg-clr-yellow { background-color: var(--yellow); }
 
 .bg-clr-danger { background-color: var(--danger); }
+
+.bg-clr-purple { background-color: var(--purple); }
 
 .fs-12 { font-size: 12px; }
 
