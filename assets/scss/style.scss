@@ -110,7 +110,6 @@ body {
 }
 
 .text-clr-dark1 {
-
     color: var(--dark1);
 }
 
@@ -196,6 +195,14 @@ body {
 
 .fs-48 {
     font-size: 48px;
+
+    @media(max-width: 768px) {
+        font-size: 38px;
+    }
+
+    @media(max-width: 550px) {
+        font-size: 28px;
+    }
 }
 
 .fs-36 {
@@ -795,9 +802,6 @@ a {
         stroke-dashoffset: 0;
     }
 }
-
-
-/*loading - END*/
 
 /*loading - END*/
 
