@@ -730,10 +730,12 @@ a {
         padding-left: 20px
     }
 }
-
+.cate-btn {
+    top: 20px;
+}
 .tourpack-item {
     position: relative;
-    overflow: hidden;
+    overflow: hidden !important;
 
     .travel-featured-caption {
         bottom: 30px;

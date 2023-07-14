@@ -198,7 +198,9 @@ a:hover { color: #009fd3; }
 .note { margin-top: 30px; }
 .note p { font-size: 18px; font-weight: 500; color: var(--dark2); font-style: italic; border-left: 10px solid var(--blue-theme); margin-left: 14px; padding-left: 20px; }
 
-.tourpack-item { position: relative; overflow: hidden; }
+.cate-btn { top: 20px; }
+
+.tourpack-item { position: relative; overflow: hidden !important; }
 .tourpack-item .travel-featured-caption { bottom: 30px; left: 0; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; }
 .tourpack-item .pack-img { max-width: 100%; border-radius: 10px; overflow: hidden !important; }
 .tourpack-item .pack-img button img { width: auto !important; }
