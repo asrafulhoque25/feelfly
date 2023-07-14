@@ -39,6 +39,7 @@ body {
     --dark-1: #0D1525;
     --dark-2: #4B566B;
     --purple: #0052CC;
+
 }
 
 /* reset, root - END */
@@ -105,6 +106,18 @@ body {
     color: var(--purple);
 }
 
+.text-clr-dark1 {
+
+    color: var(--dark1);
+}
+
+.text-clr-dark-2 {
+    color: var(--dark2);
+}
+.text-clr-purple {
+    color: var(--purple);
+}
+
 // BG color
 .bg-clr-teal {
     background-color: var(--teal);
@@ -134,7 +147,13 @@ body {
     background-color: var(--danger);
 }
 
+.bg-clr-dark-1 {
+    color: var(--dark-1);
+}
 
+.bg-clr-dark-2 {
+    color: var(--dark-2);
+}
 .bg-clr-purple {
     background-color: var(--purple);
 }
@@ -177,6 +196,10 @@ body {
 .fs-54 {
     font-size: 54px;
     line-height: 3.37rem;
+}
+
+.letter-spacing24 {
+    letter-spacing: 2.4px;
 }
 
 .fw-medium {
@@ -227,6 +250,7 @@ a {
     max-width: 890px;
     width: 100%;
 }
+
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -618,6 +642,15 @@ a {
     background-image: url(../img/bg-plane.svg);
     background-repeat: no-repeat;
     background-position: left center;
+
+    .apply-right-content {
+        .item {
+            h5 {
+                border-bottom: 1px solid #0D1525;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }
 
 // VISA GUIDE PAGE /-END
@@ -706,6 +739,9 @@ a {
         stroke-dashoffset: 0;
     }
 }
+
+
+/*loading - END*/
 
 /*loading - END*/
 

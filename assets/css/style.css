@@ -39,6 +39,12 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 .text-clr-purple { color: var(--purple); }
 
+.text-clr-dark1 { color: var(--dark1); }
+
+.text-clr-dark-2 { color: var(--dark2); }
+
+.text-clr-purple { color: var(--purple); }
+
 .bg-clr-teal { background-color: var(--teal); }
 
 .bg-clr-blue { background-color: var(--blue); }
@@ -52,6 +58,10 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .bg-clr-yellow { background-color: var(--yellow); }
 
 .bg-clr-danger { background-color: var(--danger); }
+
+.bg-clr-dark-1 { color: var(--dark-1); }
+
+.bg-clr-dark-2 { color: var(--dark-2); }
 
 .bg-clr-purple { background-color: var(--purple); }
 
@@ -70,6 +80,8 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .fs-40 { font-size: 40px; }
 
 .fs-54 { font-size: 54px; line-height: 3.37rem; }
+
+.letter-spacing24 { letter-spacing: 2.4px; }
 
 .fw-medium { font-weight: 500; }
 
@@ -177,6 +189,7 @@ a:hover { color: #009fd3; }
 
 /* line short - END*/
 #apply-schengen { background-image: url(../img/bg-plane.svg); background-repeat: no-repeat; background-position: left center; }
+#apply-schengen .apply-right-content .item h5 { border-bottom: 1px solid #0D1525; padding-bottom: 10px; }
 
 /*loading  - start*/
 #introduction { width: 100vw; height: 100vh; position: fixed; z-index: 105; background-color: #141414; cursor: pointer; overflow: hidden; top: 0; left: 0; z-index: 99999; }
@@ -198,6 +211,7 @@ a:hover { color: #009fd3; }
 
 @keyframes draw { 0% { stroke-dashoffset: 4500; }
   100% { stroke-dashoffset: 0; } }
+/*loading - END*/
 /*loading - END*/
 .featured-img { margin-top: -300px; }
 
