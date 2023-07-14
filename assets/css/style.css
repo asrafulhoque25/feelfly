@@ -7,7 +7,7 @@
 
 body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans-serif !important; }
 
-:root { --teal: #003445; --darkTeal: #00222d; --blue: #b4ecff; --deepBlue: #009fd3; --lightBlue: #97ccdd; --paleBlue: #e0ecf0; --ash: #eeede9; --yellow: #f8d448; --gray: #5d737a; --danger: #ff2e00; }
+:root { --teal: #003445; --darkTeal: #00222d; --blue: #b4ecff; --deepBlue: #009fd3; --lightBlue: #97ccdd; --paleBlue: #e0ecf0; --ash: #eeede9; --yellow: #f8d448; --gray: #5d737a; --danger: #ff2e00; --danger-shadow: #F8F0EE; }
 
 /* reset, root - END */
 @media (min-width: 1400px) { .container { max-width: 1380px; } }
@@ -41,6 +41,8 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 .text-clr-purple { color: var(--purple); }
 
+.text-clr-danger-shadow { color: var(--danger-shadow); }
+
 .bg-clr-teal { background-color: var(--teal); }
 
 .bg-clr-blue { background-color: var(--blue); }
@@ -62,6 +64,8 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .bg-clr-dark-1 { background-color: var(--dark-1); }
 
 .bg-clr-purple { background-color: var(--purple); }
+
+.bg-clr-danger-shadow { background-color: var(--danger-shadow); }
 
 .fs-12 { font-size: 12px; }
 
@@ -99,6 +103,9 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 a { -webkit-transition: 0.2s all linear; transition: 0.2s all linear; }
 a:hover { color: #009fd3; }
+
+.pb-60 { padding-bottom: 60px; }
+@media (max-width: 550px) { .pb-60 { padding-bottom: 40px; } }
 
 .section-padding { padding: 120px 0; }
 
@@ -186,8 +193,10 @@ a:hover { color: #009fd3; }
 .text { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; line-clamp: 1; -webkit-box-orient: vertical; }
 
 /* line short - END*/
-#apply-schengen { background-image: url(../img/bg-plane.svg); background-repeat: no-repeat; background-position: left center; }
+#apply-schengen { background-image: url(../img/bg-plane.svg); background-repeat: no-repeat; background-position: left 35%; }
 #apply-schengen .apply-right-content .item h5 { border-bottom: 1px solid #0D1525; padding-bottom: 10px; }
+
+#visa-eligibility { background-image: url(../img/visa-eligibility-bg.svg); background-repeat: no-repeat; background-position: bottom center; }
 
 /*loading  - start*/
 #introduction { width: 100vw; height: 100vh; position: fixed; z-index: 105; background-color: #141414; cursor: pointer; overflow: hidden; top: 0; left: 0; z-index: 99999; }
