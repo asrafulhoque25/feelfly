@@ -33,11 +33,10 @@ body {
     --lightBlue: #97ccdd;
     --paleBlue: #e0ecf0;
     --ash: #eeede9;
+    --light: #EAF0FF;
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
-    --dark1: #0D1525;
-    --dark2: #4B566B;
 }
 
 /* reset, root - END */
@@ -94,14 +93,6 @@ body {
     color: var(--danger);
 }
 
-.text-clr-dark1 {
-    color: var(--dark1);
-}
-
-.text-clr-dark2 {
-    color: var(--dark2);
-}
-
 // BG color
 .bg-clr-teal {
     background-color: var(--teal);
@@ -109,6 +100,10 @@ body {
 
 .bg-clr-blue {
     background-color: var(--blue);
+}
+
+.bg-clr-light {
+    background-color: var(--light);
 }
 
 .bg-clr-deepBlue {
@@ -130,6 +125,7 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
+
 .fs-12 {
     font-size: 12px;
 }
@@ -146,14 +142,6 @@ body {
 
 .fs-48 {
     font-size: 48px;
-
-    @media(max-width: 768px) {
-        font-size: 38px;
-    }
-
-    @media(max-width: 576px) {
-        font-size: 28px;
-    }
 }
 
 .fs-36 {
@@ -218,6 +206,7 @@ a {
     max-width: 890px;
     width: 100%;
 }
+
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -593,6 +582,8 @@ a {
 
 /* visa process - END*/
 
+
+
 /*line short - start*/
 .text {
     overflow: hidden;
@@ -603,15 +594,6 @@ a {
 }
 
 /* line short - END*/
-
-// VISA GUIDE PAGE /-START
-#apply-schengen {
-    background-image: url(../img/bg-plane.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-// VISA GUIDE PAGE /-END
 
 
 
@@ -703,7 +685,7 @@ a {
 
 // single-blog =start
 .featured-img {
-    margin-top: -300px;
+    margin-top: -150px;
 }
 
 //.blog-content-wrapper
@@ -726,7 +708,7 @@ a {
                     content: "";
                     width: 10px;
                     height: 10px;
-                    background-color: var(--blue-theme);
+                    background-color: var(--deepBlue);
                     border-radius: 50%;
                     position: absolute;
                     left: -20px;
@@ -745,7 +727,7 @@ a {
         font-weight: 500;
         color: var(--dark2);
         font-style: italic;
-        border-left: 10px solid var(--blue-theme);
+        border-left: 10px solid var(--deepBlue);
         margin-left: 14px;
         padding-left: 20px
     }
@@ -818,8 +800,23 @@ a {
             left: 125%;
         }
     }
-
-
 }
 
 // travel-wrap = End
+
+
+// breadcrumb
+.breadcrumb {
+    .breadcrumb-item {
+        &.active {
+            color: var(--lightBlue);
+        }
+
+        &::before {
+            color: var(--lightBlue) !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+// breadcrumb = End
