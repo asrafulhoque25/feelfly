@@ -40,6 +40,8 @@ body {
     --dark1: #0d1525;
     --dark2: #4b566b;
     --purple: #0052cc;
+    --green: #00D9C7;
+    --weldonBlue: #769FAD;
 }
 
 /* reset, root - END */
@@ -66,6 +68,14 @@ body {
 
 .text-clr-blue {
     color: var(--blue);
+}
+
+.text-clr-weldonBlue {
+    color: var(--weldonBlue);
+}
+
+.text-clr-green {
+    color: var(--green);
 }
 
 .text-clr-deepBlue {
@@ -1051,4 +1061,161 @@ a {
             overflow: hidden !important;
         }
     }
+}
+
+// subscribe-email
+.subscribe-email {
+    .form-control {
+        height: 58px;
+    }
+
+    .subs-btn {
+        border-radius: 0 25px 25px 0;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        height: 50px;
+    }
+}
+
+/*--- Contact Us -/Start ---*/
+.social-icons-inner-wrap {
+    gap: 30px;
+
+    @media (max-width: 992px) {
+        gap: 20px;
+    }
+
+    a {
+        svg * {
+            transition: all 200ms linear;
+        }
+
+        &:hover {
+            svg * {
+                fill: #009fd3;
+            }
+        }
+    }
+}
+
+.contact-info-wrap {
+    gap: 50px;
+
+    .border-bottom-dark {
+        margin-top: 10px;
+        max-width: 433px;
+        width: 100%;
+        border-bottom: 1px solid #0D1525;
+    }
+}
+
+
+.contact-form-wrap {
+
+    .formInputCommon {
+        border: none;
+        padding: 20px 28px;
+        border-radius: 150px;
+        border: 2px solid transparent;
+        font-size: 18px;
+        line-height: 28px;
+        color: #8A8A8A;
+        font-weight: 400;
+
+        &::placeholder {
+            color: #8A8A8A;
+        }
+
+        &:focus {
+            outline: none !important;
+            border: 2px solid #009FD3;
+            box-shadow: 0px 20px 20px 0px rgba(31, 43, 47, 0.05);
+
+        }
+
+        &.formInputTextarea {
+            border-radius: 16px;
+        }
+    }
+
+    .formInputBtn {
+        border-radius: 150px;
+        padding: 16px 40px;
+        margin-top: 15px;
+        transition: all 200ms linear;
+
+        &:hover {
+            background: #009FD3;
+            color: #ffffff;
+        }
+
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+/*--- Contact Us -/End ---*/
+
+
+
+/*--- Our Policy -/Start ---*/
+.our-policy-section {
+    padding-top: 160px;
+
+    .our-policy-wrap {
+        padding: 70px 116px;
+    }
+
+    .our-policy-list {
+        gap: 16px;
+    }
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.fs-58 {
+    font-size: 58px;
+    line-height: 68px;
+}
+
+/*--- Our Policy -/End ---*/
+
+
+/*--- Error 404 -/Start ---*/
+.error-404-section {
+    padding-top: 160px;
+}
+
+/*--- Error 404 -/End ---*/
+
+
+/*--- breadcrumb ---*/
+.breadcrumb {
+    .breadcrumb-item {
+        &.active {
+            color: var(--lightBlue);
+        }
+
+        &::before {
+            padding: 0;
+            color: var(--lightBlue);
+        }
+    }
+}
+
+/*--- breadcrumb -/End ---*/
+
+
+
+.footer-bottom {
+    border-top: 1px solid #0B3C4D;
 }
