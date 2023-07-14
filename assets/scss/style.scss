@@ -36,8 +36,8 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
-    --dark1: #0D1525;
-    --dark2: #4B566B;
+    --dark-1: #0D1525;
+    --dark-2: #4B566B;
 }
 
 /* reset, root - END */
@@ -94,11 +94,11 @@ body {
     color: var(--danger);
 }
 
-.text-clr-dark1 {
+.text-clr-dark-1 {
     color: var(--dark1);
 }
 
-.text-clr-dark2 {
+.text-clr-dark-2 {
     color: var(--dark2);
 }
 
@@ -130,6 +130,15 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
+
+.bg-clr-dark-1 {
+    color: var(--dark-1);
+}
+
+.bg-clr-dark-2 {
+    color: var(--dark-2);
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -168,6 +177,10 @@ body {
 .fs-54 {
     font-size: 54px;
     line-height: 3.37rem;
+}
+
+.letter-spacing24 {
+    letter-spacing: 2.4px;
 }
 
 .fw-medium {
@@ -218,6 +231,7 @@ a {
     max-width: 890px;
     width: 100%;
 }
+
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -609,6 +623,15 @@ a {
     background-image: url(../img/bg-plane.svg);
     background-repeat: no-repeat;
     background-position: left center;
+
+    .apply-right-content {
+        .item {
+            h5 {
+                border-bottom: 1px solid #0D1525;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }
 
 // VISA GUIDE PAGE /-END
