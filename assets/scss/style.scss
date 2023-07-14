@@ -36,8 +36,14 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
+<<<<<<< HEAD
 
     --dark-1: #0D1525;
+=======
+    --dark1: #0D1525;
+    --dark2: #4B566B;
+    --purple: #0052CC;
+>>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
 }
 
 /* reset, root - END */
@@ -94,8 +100,20 @@ body {
     color: var(--danger);
 }
 
+<<<<<<< HEAD
 .text-clr-dark-1 {
     color: var(--dark-1);
+=======
+.text-clr-dark1 {
+    color: var(--dark1);
+}
+
+.text-clr-dark2 {
+    color: var(--dark2);
+}
+.text-clr-purple {
+    color: var(--purple);
+>>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
 }
 
 // BG color
@@ -126,11 +144,17 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
+<<<<<<< HEAD
 
 .bg-clr-dark-1 {
     background-color: var(--dark-1);
 }
 
+=======
+.bg-clr-purple {
+    background-color: var(--purple);
+}
+>>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
 .fs-12 {
     font-size: 12px;
 }
@@ -147,6 +171,14 @@ body {
 
 .fs-48 {
     font-size: 48px;
+
+    @media(max-width: 768px) {
+        font-size: 38px;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
 }
 
 .fs-36 {
@@ -211,7 +243,6 @@ a {
     max-width: 890px;
     width: 100%;
 }
-
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -484,10 +515,7 @@ a {
     }
 
     &.single-blog {
-        background-image: none;
-
         .sub-banner-content {
-            min-height: 630px;
             padding-top: 170px;
         }
     }
@@ -590,8 +618,6 @@ a {
 
 /* visa process - END*/
 
-
-
 /*line short - start*/
 .text {
     overflow: hidden;
@@ -602,6 +628,15 @@ a {
 }
 
 /* line short - END*/
+
+// VISA GUIDE PAGE /-START
+#apply-schengen {
+    background-image: url(../img/bg-plane.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+// VISA GUIDE PAGE /-END
 
 
 
