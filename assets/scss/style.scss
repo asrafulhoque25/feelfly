@@ -36,19 +36,7 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
-<<<<<<< HEAD
-    --dark-1: #0D1525;
-    --dark-2: #4B566B;
-=======
-<<<<<<< HEAD
 
-    --dark-1: #0D1525;
-=======
-    --dark1: #0D1525;
-    --dark2: #4B566B;
-    --purple: #0052CC;
->>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
->>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
 }
 
 /* reset, root - END */
@@ -105,15 +93,12 @@ body {
     color: var(--danger);
 }
 
-<<<<<<< HEAD
-.text-clr-dark-1 {
-=======
-<<<<<<< HEAD
 .text-clr-dark-1 {
     color: var(--dark-1);
-=======
+}
+
 .text-clr-dark1 {
->>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
+
     color: var(--dark1);
 }
 
@@ -122,7 +107,7 @@ body {
 }
 .text-clr-purple {
     color: var(--purple);
->>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
+
 }
 
 // BG color
@@ -153,7 +138,7 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
-<<<<<<< HEAD
+
 
 .bg-clr-dark-1 {
     color: var(--dark-1);
@@ -163,19 +148,16 @@ body {
     color: var(--dark-2);
 }
 
-=======
-<<<<<<< HEAD
 
 .bg-clr-dark-1 {
     background-color: var(--dark-1);
 }
 
-=======
+
 .bg-clr-purple {
     background-color: var(--purple);
 }
->>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
->>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
+
 .fs-12 {
     font-size: 12px;
 }
@@ -758,9 +740,9 @@ a {
     }
 }
 
-<<<<<<< HEAD
+
 /*loading - END*/
-=======
+
 /*loading - END*/
 
 
@@ -920,4 +902,3 @@ a {
 
 
 /*--- Contact Us -/End ---*/
->>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
