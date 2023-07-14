@@ -36,6 +36,8 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
+    --dark1: #0D1525;
+    --dark2: #4B566B;
 }
 
 /* reset, root - END */
@@ -92,6 +94,14 @@ body {
     color: var(--danger);
 }
 
+.text-clr-dark1 {
+    color: var(--dark1);
+}
+
+.text-clr-dark2 {
+    color: var(--dark2);
+}
+
 // BG color
 .bg-clr-teal {
     background-color: var(--teal);
@@ -120,7 +130,6 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
-
 .fs-12 {
     font-size: 12px;
 }
@@ -137,6 +146,14 @@ body {
 
 .fs-48 {
     font-size: 48px;
+
+    @media(max-width: 768px) {
+        font-size: 38px;
+    }
+
+    @media(max-width: 576px) {
+        font-size: 28px;
+    }
 }
 
 .fs-36 {
@@ -201,7 +218,6 @@ a {
     max-width: 890px;
     width: 100%;
 }
-
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -474,10 +490,7 @@ a {
     }
 
     &.single-blog {
-        background-image: none;
-
         .sub-banner-content {
-            min-height: 630px;
             padding-top: 170px;
         }
     }
@@ -580,8 +593,6 @@ a {
 
 /* visa process - END*/
 
-
-
 /*line short - start*/
 .text {
     overflow: hidden;
@@ -592,6 +603,15 @@ a {
 }
 
 /* line short - END*/
+
+// VISA GUIDE PAGE /-START
+#apply-schengen {
+    background-image: url(../img/bg-plane.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+// VISA GUIDE PAGE /-END
 
 
 
@@ -730,12 +750,10 @@ a {
         padding-left: 20px
     }
 }
-.cate-btn {
-    top: 20px;
-}
+
 .tourpack-item {
     position: relative;
-    overflow: hidden !important;
+    overflow: hidden;
 
     .travel-featured-caption {
         bottom: 30px;

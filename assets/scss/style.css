@@ -31,6 +31,8 @@ body {
 @media (min-width: 1400px) {
   .container {
     max-width: 1380px; } }
+<<<<<<< HEAD
+=======
 =======
 * { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -41,6 +43,7 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 /* reset, root - END */
 @media (min-width: 1400px) { .container { max-width: 1380px; } }
 >>>>>>> 943c5c7472cef24de21530796f513f320a654a24
+>>>>>>> 0803736e7fb78aeb6a52d4d6ac3ae8fad7fe5299
 
 /* helper , base classes */
 .text-clr-teal { color: var(--teal); }
@@ -64,6 +67,9 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .text-clr-danger { color: var(--danger); }
 
 <<<<<<< HEAD
+.text-clr-darkTeeal {
+  color: var(--darkTeal); }
+
 .text-clr-darkTeeal {
   color: var(--darkTeal); }
 
@@ -115,6 +121,50 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .fs-12 {
   font-size: 12px; }
 =======
+<<<<<<< HEAD
+.text-clr-lightBlue {
+  color: var(--lightBlue); }
+>>>>>>> 0803736e7fb78aeb6a52d4d6ac3ae8fad7fe5299
+
+.text-clr-gray {
+  color: var(--gray); }
+
+<<<<<<< HEAD
+.fs-18 {
+  font-size: 18px;
+  line-height: 28px; }
+
+.fs-48 {
+  font-size: 48px; }
+=======
+.text-clr-danger {
+  color: var(--danger); }
+>>>>>>> 0803736e7fb78aeb6a52d4d6ac3ae8fad7fe5299
+
+.bg-clr-teal {
+  background-color: var(--teal); }
+
+.bg-clr-blue {
+  background-color: var(--blue); }
+
+.bg-clr-deepBlue {
+  background-color: var(--deepBlue); }
+
+.bg-clr-paleBlue {
+  background-color: var(--paleBlue); }
+
+.bg-clr-ash {
+  background-color: var(--ash); }
+
+.bg-clr-yellow {
+  background-color: var(--yellow); }
+
+.bg-clr-danger {
+  background-color: var(--danger); }
+
+.fs-12 {
+  font-size: 12px; }
+=======
 .bg-clr-yellow { background-color: var(--yellow); }
 >>>>>>> 943c5c7472cef24de21530796f513f320a654a24
 
@@ -134,6 +184,9 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .fs-14 { font-size: 14px; line-height: 22px; }
 
 <<<<<<< HEAD
+.fs-40 {
+  font-size: 40px; }
+
 .fs-40 {
   font-size: 40px; }
 
@@ -174,6 +227,24 @@ a:hover { color: #009fd3; }
 .section-padding { padding: 120px 0; }
 
 .section-header { max-width: 890px; width: 100%; }
+
+.h-52 {
+  height: 52px; }
+
+.border-top-d {
+  border-top: 1px solid #cbd8dc; }
+
+a {
+  transition: 0.2s all linear; }
+  a:hover {
+    color: #009fd3; }
+
+.section-padding {
+  padding: 120px 0; }
+
+.section-header {
+  max-width: 890px;
+  width: 100%; }
 
 .h-52 {
   height: 52px; }
