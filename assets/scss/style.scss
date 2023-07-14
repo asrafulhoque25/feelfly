@@ -36,9 +36,9 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
-    --dark1: #0D1525;
-    --dark2: #4B566B;
-    --purple: #0052CC;
+    --dark1: #0d1525;
+    --dark2: #4b566b;
+    --purple: #0052cc;
 }
 
 /* reset, root - END */
@@ -154,11 +154,11 @@ body {
 .fs-48 {
     font-size: 48px;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         font-size: 38px;
     }
 
-    @media(max-width: 576px) {
+    @media (max-width: 576px) {
         font-size: 28px;
     }
 }
@@ -620,8 +620,6 @@ a {
 
 // VISA GUIDE PAGE /-END
 
-
-
 /*loading  - start*/
 #introduction {
     width: 100vw;
@@ -679,7 +677,7 @@ a {
 }
 
 .image-container {
-    background-color: #1A4958;
+    background-color: #1a4958;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -706,7 +704,6 @@ a {
 }
 
 /*loading - END*/
-
 
 // single-blog =start
 .featured-img {
@@ -754,8 +751,12 @@ a {
         font-style: italic;
         border-left: 10px solid var(--blue-theme);
         margin-left: 14px;
-        padding-left: 20px
+        padding-left: 20px;
     }
+}
+
+.cate-btn {
+    top: 20px;
 }
 
 .tourpack-item {
@@ -790,26 +791,25 @@ a {
             left: -75%;
             z-index: 2;
             display: block;
-            content: '';
+            content: "";
             width: 50%;
             height: 100%;
-            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
-            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
             -webkit-transform: skewX(-25deg);
             transform: skewX(-25deg);
         }
     }
 
     &:hover {
-
         .pack-img {
             img {
                 transform: scale(1.059);
             }
 
             &::before {
-                -webkit-animation: shine .75s;
-                animation: shine .75s;
+                -webkit-animation: shine 0.75s;
+                animation: shine 0.75s;
             }
         }
     }
@@ -825,8 +825,80 @@ a {
             left: 125%;
         }
     }
-
-
 }
 
 // travel-wrap = End
+
+// swiper slider = start
+.swiper-arrow {
+    // top: -40px;
+    position: absolute;
+    transition: all 0.2s linear;
+    z-index: 10;
+    background-color: transparent;
+
+    &:hover {
+        color: var(--purple);
+    }
+}
+
+.apps-swiper-paginate {
+    button {
+        height: 42px;
+        width: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: -80px;
+        transform: translateY(-50%);
+        border-radius: 100px;
+        background: #fff;
+        box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.1);
+        svg * {
+            fill: #5d737a;
+        }
+
+        &.recent-deals-swiper-next,
+        &.testimonial-prev {
+            right: -80px !important;
+            left: auto;
+        }
+
+        &:hover {
+            background-color: var(--deepBlue);
+            svg * {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark3);
+
+    &.swiper-pagination-bullet-active {
+        background-color: var(--main-extra-light);
+    }
+}
+// swiper slider = End
+
+// testimonial = start
+.testimonial-wrap {
+    .testimonial-item {
+        border-radius: 16px;
+        .testimonial-right {
+            padding: 40px 60px;
+            border-radius: 0px 16px 16px 0px;
+            overflow: hidden !important;
+        }
+        .testimonial-item-left {
+            border-radius: 16px 0 0 16px;
+            overflow: hidden !important;
+        }
+    }
+}
+// testimonial = End
