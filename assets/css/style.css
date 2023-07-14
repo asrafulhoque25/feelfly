@@ -39,6 +39,10 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 .text-clr-purple { color: var(--purple); }
 
+.text-clr-dark1 { color: var(--dark1); }
+
+.text-clr-dark-2 { color: var(--dark2); }
+
 .text-clr-purple { color: var(--purple); }
 
 .text-clr-danger-shadow { color: var(--danger-shadow); }
@@ -59,7 +63,9 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 .bg-clr-danger { background-color: var(--danger); }
 
+.bg-clr-dark-1 { color: var(--dark-1); }
 
+.bg-clr-dark-2 { color: var(--dark-2); }
 
 .bg-clr-dark-1 { background-color: var(--dark-1); }
 
@@ -260,6 +266,9 @@ a:hover { color: #009fd3; }
 .swiper-pagination-bullet { display: none; width: 10px; height: 10px; background-color: var(--dark3); }
 .swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: var(--main-extra-light); }
 
+.testimonial-wrap .testimonial-item { border-radius: 16px; }
+.testimonial-wrap .testimonial-item .testimonial-right { padding: 40px 60px; border-radius: 0px 16px 16px 0px; overflow: hidden !important; }
+.testimonial-wrap .testimonial-item .testimonial-item-left { border-radius: 16px 0 0 16px; overflow: hidden !important; }
 
 .contact-form-wrap .formInputCommon { border: none; padding: 20px 28px; border-radius: 150px; border: 2px solid transparent; font-size: 18px; line-height: 28px; color: #8A8A8A; font-weight: 400; }
 .contact-form-wrap .formInputCommon::-webkit-input-placeholder { color: #8A8A8A; }
@@ -289,7 +298,3 @@ a:hover { color: #009fd3; }
 .error-404-section { padding-top: 160px; }
 
 /*--- Error 404 -/End ---*/
-
-.testimonial-wrap .testimonial-item { border-radius: 16px; }
-.testimonial-wrap .testimonial-item .testimonial-right { padding: 40px 60px; border-radius: 0px 16px 16px 0px; overflow: hidden !important; }
-.testimonial-wrap .testimonial-item .testimonial-item-left { border-radius: 16px 0 0 16px; overflow: hidden !important; }
