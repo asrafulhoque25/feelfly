@@ -33,6 +33,7 @@ body {
     --lightBlue: #97ccdd;
     --paleBlue: #e0ecf0;
     --ash: #eeede9;
+    --light: #eaf0ff;
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
@@ -95,15 +96,32 @@ body {
     color: var(--danger);
 }
 
+.text-clr-dark-1 {
+    color: var(--dark-1);
+}
+
+.text-clr-dark-2 {
+    color: var(--dark-2);
+}
+
+.text-clr-purple {
+    color: var(--purple);
+}
+
 .text-clr-dark1 {
     color: var(--dark1);
 }
 
-.text-clr-dark2 {
+.text-clr-dark-2 {
     color: var(--dark2);
 }
+
 .text-clr-purple {
     color: var(--purple);
+}
+
+.text-clr-danger-shadow {
+    color: var(--danger-shadow);
 }
 
 // BG color
@@ -113,6 +131,10 @@ body {
 
 .bg-clr-blue {
     background-color: var(--blue);
+}
+
+.bg-clr-light {
+    background-color: var(--light);
 }
 
 .bg-clr-deepBlue {
@@ -134,9 +156,27 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
+
+.bg-clr-dark-1 {
+    color: var(--dark-1);
+}
+
+.bg-clr-dark-2 {
+    color: var(--dark-2);
+}
+
+.bg-clr-dark-1 {
+    background-color: var(--dark-1);
+}
+
 .bg-clr-purple {
     background-color: var(--purple);
 }
+
+.bg-clr-danger-shadow {
+    background-color: var(--danger-shadow);
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -175,6 +215,10 @@ body {
 .fs-54 {
     font-size: 54px;
     line-height: 3.37rem;
+}
+
+.letter-spacing24 {
+    letter-spacing: 2.4px;
 }
 
 .fw-medium {
@@ -217,6 +261,14 @@ a {
     }
 }
 
+.pb-60 {
+    padding-bottom: 60px;
+
+    @media (max-width: 550px) {
+        padding-bottom: 40px;
+    }
+}
+
 .section-padding {
     padding: 120px 0;
 }
@@ -225,6 +277,7 @@ a {
     max-width: 890px;
     width: 100%;
 }
+
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -615,7 +668,22 @@ a {
 #apply-schengen {
     background-image: url(../img/bg-plane.svg);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left 35%;
+
+    .apply-right-content {
+        .item {
+            h5 {
+                border-bottom: 1px solid #0d1525;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+#visa-eligibility {
+    background-image: url(../img/visa-eligibility-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 // VISA GUIDE PAGE /-END
@@ -705,9 +773,11 @@ a {
 
 /*loading - END*/
 
+/*loading - END*/
+
 // single-blog =start
 .featured-img {
-    margin-top: -300px;
+    margin-top: -150px;
 }
 
 //.blog-content-wrapper
@@ -730,7 +800,7 @@ a {
                     content: "";
                     width: 10px;
                     height: 10px;
-                    background-color: var(--blue-theme);
+                    background-color: var(--deepBlue);
                     border-radius: 50%;
                     position: absolute;
                     left: -20px;
@@ -749,7 +819,7 @@ a {
         font-weight: 500;
         color: var(--dark2);
         font-style: italic;
-        border-left: 10px solid var(--blue-theme);
+        border-left: 10px solid var(--deepBlue);
         margin-left: 14px;
         padding-left: 20px;
     }
@@ -829,76 +899,4 @@ a {
 
 // travel-wrap = End
 
-// swiper slider = start
-.swiper-arrow {
-    // top: -40px;
-    position: absolute;
-    transition: all 0.2s linear;
-    z-index: 10;
-    background-color: transparent;
-
-    &:hover {
-        color: var(--purple);
-    }
-}
-
-.apps-swiper-paginate {
-    button {
-        height: 42px;
-        width: 42px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        left: -80px;
-        transform: translateY(-50%);
-        border-radius: 100px;
-        background: #fff;
-        box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.1);
-        svg * {
-            fill: #5d737a;
-        }
-
-        &.recent-deals-swiper-next,
-        &.testimonial-prev {
-            right: -80px !important;
-            left: auto;
-        }
-
-        &:hover {
-            background-color: var(--deepBlue);
-            svg * {
-                fill: #fff;
-            }
-        }
-    }
-}
-
-.swiper-pagination-bullet {
-    display: none;
-    width: 10px;
-    height: 10px;
-    background-color: var(--dark3);
-
-    &.swiper-pagination-bullet-active {
-        background-color: var(--main-extra-light);
-    }
-}
-// swiper slider = End
-
-// testimonial = start
-.testimonial-wrap {
-    .testimonial-item {
-        border-radius: 16px;
-        .testimonial-right {
-            padding: 40px 60px;
-            border-radius: 0px 16px 16px 0px;
-            overflow: hidden !important;
-        }
-        .testimonial-item-left {
-            border-radius: 16px 0 0 16px;
-            overflow: hidden !important;
-        }
-    }
-}
-// testimonial = End
+// travel-wrap = End
