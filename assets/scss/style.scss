@@ -130,15 +130,6 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
-
-.bg-clr-dark1 {
-    background-color: var(--dark1);
-}
-
-.bg-clr-dark2 {
-    background-color: var(--dark2);
-}
-
 .fs-12 {
     font-size: 12px;
 }
@@ -227,11 +218,6 @@ a {
     max-width: 890px;
     width: 100%;
 }
-
-.pb-60 {
-    padding-bottom: 60px;
-}
-
 /* helper , base classes  - END*/
 
 /* header  - start*/
@@ -491,6 +477,26 @@ a {
         }
     }
 }
+
+// sub-banner
+.sub-banner {
+    background-image: url(../img/subpage-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom center;
+
+    .sub-banner-content {
+        min-height: 500px;
+    }
+
+    &.single-blog {
+        .sub-banner-content {
+            padding-top: 170px;
+        }
+    }
+}
+
+// sub-banner = End
 
 .button {
     position: relative;
