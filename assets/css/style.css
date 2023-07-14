@@ -7,7 +7,7 @@
 
 body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans-serif !important; }
 
-:root { --teal: #003445; --darkTeal: #00222d; --blue: #b4ecff; --deepBlue: #009fd3; --lightBlue: #97ccdd; --paleBlue: #e0ecf0; --ash: #eeede9; --yellow: #f8d448; --gray: #5d737a; --danger: #ff2e00; --danger-shadow: #F8F0EE; }
+:root { --teal: #003445; --darkTeal: #00222d; --blue: #b4ecff; --deepBlue: #009fd3; --lightBlue: #97ccdd; --paleBlue: #e0ecf0; --ash: #eeede9; --light: #EAF0FF; --yellow: #f8d448; --gray: #5d737a; --danger: #ff2e00; --danger-shadow: #F8F0EE; --dark-1: #0D1525; --dark-2: #4B566B; --purple: #0052CC; }
 
 /* reset, root - END */
 @media (min-width: 1400px) { .container { max-width: 1380px; } }
@@ -35,6 +35,10 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 
 .text-clr-dark-1 { color: var(--dark-1); }
 
+.text-clr-dark-2 { color: var(--dark-2); }
+
+.text-clr-purple { color: var(--purple); }
+
 .text-clr-dark1 { color: var(--dark1); }
 
 .text-clr-dark-2 { color: var(--dark2); }
@@ -46,6 +50,8 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .bg-clr-teal { background-color: var(--teal); }
 
 .bg-clr-blue { background-color: var(--blue); }
+
+.bg-clr-light { background-color: var(--light); }
 
 .bg-clr-deepBlue { background-color: var(--deepBlue); }
 
@@ -74,8 +80,6 @@ body { padding: 0; margin: 0; background-color: #fff; font-family: "Rubik", sans
 .fs-18 { font-size: 18px; line-height: 28px; }
 
 .fs-48 { font-size: 48px; }
-@media (max-width: 768px) { .fs-48 { font-size: 38px; } }
-@media (max-width: 576px) { .fs-48 { font-size: 28px; } }
 
 .fs-36 { font-size: 36px; line-height: 46px; }
 
@@ -220,15 +224,15 @@ a:hover { color: #009fd3; }
   100% { stroke-dashoffset: 0; } }
 /*loading - END*/
 /*loading - END*/
-.featured-img { margin-top: -300px; }
+.featured-img { margin-top: -150px; }
 
 .blog-content-wrapper .content-inner-list { max-width: 890px; margin: 60px auto; }
 .blog-content-wrapper .content-inner-list .inner-list { list-style: none; }
 .blog-content-wrapper .content-inner-list .inner-list li { font-size: 16px; font-weight: normal; color: var(--dark2); position: relative; margin-bottom: 15px; }
-.blog-content-wrapper .content-inner-list .inner-list li::before { content: ""; width: 10px; height: 10px; background-color: var(--blue-theme); border-radius: 50%; position: absolute; left: -20px; top: 6px; }
+.blog-content-wrapper .content-inner-list .inner-list li::before { content: ""; width: 10px; height: 10px; background-color: var(--deepBlue); border-radius: 50%; position: absolute; left: -20px; top: 6px; }
 
 .note { margin-top: 30px; }
-.note p { font-size: 18px; font-weight: 500; color: var(--dark2); font-style: italic; border-left: 10px solid var(--blue-theme); margin-left: 14px; padding-left: 20px; }
+.note p { font-size: 18px; font-weight: 500; color: var(--dark2); font-style: italic; border-left: 10px solid var(--deepBlue); margin-left: 14px; padding-left: 20px; }
 
 .tourpack-item { position: relative; overflow: hidden; }
 .tourpack-item .travel-featured-caption { bottom: 30px; left: 0; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; }
@@ -246,7 +250,13 @@ a:hover { color: #009fd3; }
 .social-icons-inner-wrap a svg * { -webkit-transition: all 200ms linear; transition: all 200ms linear; }
 .social-icons-inner-wrap a:hover svg * { fill: #009fd3; }
 
-.contact-info-wrap { gap: 50px; }
-.contact-info-wrap .border-bottom-dark { margin-top: 10px; max-width: 433px; width: 100%; border-bottom: 1px solid #0D1525; }
+.breadcrumb .breadcrumb-item.active { color: var(--lightBlue); }
+.breadcrumb .breadcrumb-item::before { color: var(--lightBlue) !important; padding: 0 !important; /*--- Contact Us -/Start ---*/ }
+.breadcrumb .breadcrumb-item::before .social-icons-inner-wrap { gap: 30px; }
+@media (max-width: 992px) { .breadcrumb .breadcrumb-item::before .social-icons-inner-wrap { gap: 20px; } }
+.breadcrumb .breadcrumb-item::before .social-icons-inner-wrap a svg * { -webkit-transition: all 200ms linear; transition: all 200ms linear; }
+.breadcrumb .breadcrumb-item::before .social-icons-inner-wrap a:hover svg * { fill: #009fd3; }
+.breadcrumb .breadcrumb-item::before .contact-info-wrap { gap: 50px; }
+.breadcrumb .breadcrumb-item::before .contact-info-wrap .border-bottom-dark { margin-top: 10px; max-width: 433px; width: 100%; border-bottom: 1px solid #0D1525; }
 
 /*--- Contact Us -/End ---*/
