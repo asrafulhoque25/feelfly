@@ -46,38 +46,64 @@ $(window).on("load", function () {
 
 
 $(document).ready(function () {
+    
 
-    // testimonial-active
-    $(function () {
-        if ($('.testimonials-active').length) {
-            $(".testimonials-active").owlCarousel({
-                items: 3,
-                margin: 30,
-                nav: true,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 2500,
-                animateOut: 'fadeOut',
-                smartSpeed: 2500,
-                navText: ["<img src='assets/img/arrow-left.svg' class='img-fluid' />", "<img src='assets/img/arrow-right-s.svg' class='img-fluid' />"],
-                dots: false,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 2
-                    },
-                    1200: {
-                        items: 3
-                    }
-                }
-            });
-        }
+    // recent-deals-active = slider
+    let recentDealsActive = new Swiper(".recent-deals-active", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".recent-deals-swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".recent-deals-swiper-next",
+            prevEl: ".recent-deals-swiper-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+        },
     });
-
-
+    // testimonial = slider
+    let testimonialItems = new Swiper(".testimonial-items", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".recent-deals-swiper-pagination2",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".testimonial-next",
+            prevEl: ".testimonial-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            1200: {
+                slidesPerView: 1,
+            },
+        },
+    });
 
     // wow js init
     // $(function () {
@@ -87,9 +113,6 @@ $(document).ready(function () {
     //     });
     //     wow.init();
     // });
-
-
-
 });
 
 
