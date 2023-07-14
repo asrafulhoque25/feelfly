@@ -36,8 +36,19 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
+<<<<<<< HEAD
     --dark-1: #0D1525;
     --dark-2: #4B566B;
+=======
+<<<<<<< HEAD
+
+    --dark-1: #0D1525;
+=======
+    --dark1: #0D1525;
+    --dark2: #4B566B;
+    --purple: #0052CC;
+>>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
+>>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
 }
 
 /* reset, root - END */
@@ -94,12 +105,24 @@ body {
     color: var(--danger);
 }
 
+<<<<<<< HEAD
 .text-clr-dark-1 {
+=======
+<<<<<<< HEAD
+.text-clr-dark-1 {
+    color: var(--dark-1);
+=======
+.text-clr-dark1 {
+>>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
     color: var(--dark1);
 }
 
 .text-clr-dark-2 {
     color: var(--dark2);
+}
+.text-clr-purple {
+    color: var(--purple);
+>>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
 }
 
 // BG color
@@ -130,6 +153,7 @@ body {
 .bg-clr-danger {
     background-color: var(--danger);
 }
+<<<<<<< HEAD
 
 .bg-clr-dark-1 {
     color: var(--dark-1);
@@ -139,6 +163,19 @@ body {
     color: var(--dark-2);
 }
 
+=======
+<<<<<<< HEAD
+
+.bg-clr-dark-1 {
+    background-color: var(--dark-1);
+}
+
+=======
+.bg-clr-purple {
+    background-color: var(--purple);
+}
+>>>>>>> d4b6a39aed58c5e3244eb7a1909d0c1dd7c6d8d2
+>>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
 .fs-12 {
     font-size: 12px;
 }
@@ -721,4 +758,166 @@ a {
     }
 }
 
+<<<<<<< HEAD
 /*loading - END*/
+=======
+/*loading - END*/
+
+
+// single-blog =start
+.featured-img {
+    margin-top: -300px;
+}
+
+//.blog-content-wrapper
+.blog-content-wrapper {
+    .content-inner-list {
+        max-width: 890px;
+        margin: 60px auto;
+
+        .inner-list {
+            list-style: none;
+
+            li {
+                font-size: 16px;
+                font-weight: normal;
+                color: var(--dark2);
+                position: relative;
+                margin-bottom: 15px;
+
+                &::before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background-color: var(--blue-theme);
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -20px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+}
+
+.note {
+    margin-top: 30px;
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--dark2);
+        font-style: italic;
+        border-left: 10px solid var(--blue-theme);
+        margin-left: 14px;
+        padding-left: 20px
+    }
+}
+
+.tourpack-item {
+    position: relative;
+    overflow: hidden;
+
+    .travel-featured-caption {
+        bottom: 30px;
+        left: 0;
+        transition: all 0.3s linear;
+    }
+
+    .pack-img {
+        max-width: 100%;
+        border-radius: 10px;
+        overflow: hidden !important;
+
+        button {
+            img {
+                width: auto !important;
+            }
+        }
+
+        img {
+            transition: all 0.3s linear;
+            width: 100%;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+    }
+
+    &:hover {
+
+        .pack-img {
+            img {
+                transform: scale(1.059);
+            }
+
+            &::before {
+                -webkit-animation: shine .75s;
+                animation: shine .75s;
+            }
+        }
+    }
+
+    @-webkit-keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+
+
+}
+
+// travel-wrap = End
+
+
+
+/*--- Contact Us -/Start ---*/
+.social-icons-inner-wrap {
+    gap: 30px;
+    @media (max-width: 992px) { 
+        gap: 20px;
+    }
+    a {
+        svg * {
+            transition: all 200ms linear;
+        }
+        &:hover {
+            svg * {
+                fill: #009fd3;
+            }
+        }
+    }
+}
+
+.contact-info-wrap {
+    gap: 50px;
+
+    .border-bottom-dark {
+        margin-top: 10px;
+        max-width: 433px;
+        width: 100%;
+        border-bottom: 1px solid #0D1525;
+    }
+}
+
+
+/*--- Contact Us -/End ---*/
+>>>>>>> d2bcdf12aced5a5ed4946779bcba141fc99df70d
