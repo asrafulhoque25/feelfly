@@ -897,6 +897,81 @@ a {
     }
 }
 
+// swiper slider = start
+.swiper-arrow {
+    // top: -40px;
+    position: absolute;
+    transition: all 0.2s linear;
+    z-index: 10;
+    background-color: transparent;
+
+    &:hover {
+        color: var(--purple);
+    }
+}
+
+.apps-swiper-paginate {
+    button {
+        height: 42px;
+        width: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: -80px;
+        transform: translateY(-50%);
+        border-radius: 100px;
+        background: #fff;
+        box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.1);
+        svg * {
+            fill: #5d737a;
+        }
+
+        &.recent-deals-swiper-next,
+        &.testimonial-prev {
+            right: -80px !important;
+            left: auto;
+        }
+
+        &:hover {
+            background-color: var(--deepBlue);
+            svg * {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark3);
+
+    &.swiper-pagination-bullet-active {
+        background-color: var(--main-extra-light);
+    }
+}
+// swiper slider = End
+
+// testimonial = start
+.testimonial-wrap {
+    .testimonial-item {
+        border-radius: 16px;
+        .testimonial-right {
+            padding: 40px 60px;
+            border-radius: 0px 16px 16px 0px;
+            overflow: hidden !important;
+        }
+        .testimonial-item-left {
+            border-radius: 16px 0 0 16px;
+            overflow: hidden !important;
+        }
+    }
+}
+
+
+
 // travel-wrap = End
 
 // travel-wrap = End

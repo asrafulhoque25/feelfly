@@ -248,3 +248,18 @@ a:hover { color: #009fd3; }
 .tourpack-item:hover .pack-img::before { -webkit-animation: shine 0.75s; animation: shine 0.75s; }
 @-webkit-keyframes shine { 100% { left: 125%; } }
 @keyframes shine { 100% { left: 125%; } }
+.swiper-arrow { position: absolute; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 10; background-color: transparent; }
+.swiper-arrow:hover { color: var(--purple); }
+
+.apps-swiper-paginate button { height: 42px; width: 42px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 50%; left: -80px; -webkit-transform: translateY(-50%); transform: translateY(-50%); border-radius: 100px; background: #fff; -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.1); box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.1); }
+.apps-swiper-paginate button svg * { fill: #5d737a; }
+.apps-swiper-paginate button.recent-deals-swiper-next, .apps-swiper-paginate button.testimonial-prev { right: -80px !important; left: auto; }
+.apps-swiper-paginate button:hover { background-color: var(--deepBlue); }
+.apps-swiper-paginate button:hover svg * { fill: #fff; }
+
+.swiper-pagination-bullet { display: none; width: 10px; height: 10px; background-color: var(--dark3); }
+.swiper-pagination-bullet.swiper-pagination-bullet-active { background-color: var(--main-extra-light); }
+
+.testimonial-wrap .testimonial-item { border-radius: 16px; }
+.testimonial-wrap .testimonial-item .testimonial-right { padding: 40px 60px; border-radius: 0px 16px 16px 0px; overflow: hidden !important; }
+.testimonial-wrap .testimonial-item .testimonial-item-left { border-radius: 16px 0 0 16px; overflow: hidden !important; }
