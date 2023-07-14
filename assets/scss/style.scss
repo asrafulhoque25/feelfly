@@ -202,13 +202,14 @@ body {
 
     @media(max-width: 550px) {
 
-    @media (max-width: 768px) {
-        font-size: 38px;
-    }
+        @media (max-width: 768px) {
+            font-size: 38px;
+        }
 
-    @media (max-width: 576px) {
+        @media (max-width: 576px) {
 
-        font-size: 28px;
+            font-size: 28px;
+        }
     }
 }
 
@@ -956,6 +957,7 @@ a {
         border-radius: 100px;
         background: #fff;
         box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.1);
+
         svg * {
             fill: #5d737a;
         }
@@ -968,6 +970,7 @@ a {
 
         &:hover {
             background-color: var(--deepBlue);
+
             svg * {
                 fill: #fff;
             }
@@ -985,17 +988,20 @@ a {
         background-color: var(--main-extra-light);
     }
 }
+
 // swiper slider = End
 
 // testimonial = start
 .testimonial-wrap {
     .testimonial-item {
         border-radius: 16px;
+
         .testimonial-right {
             padding: 40px 60px;
             border-radius: 0px 16px 16px 0px;
             overflow: hidden !important;
         }
+
         .testimonial-item-left {
             border-radius: 16px 0 0 16px;
             overflow: hidden !important;
@@ -1016,9 +1022,11 @@ a {
         line-height: 28px;
         color: #8A8A8A;
         font-weight: 400;
+
         &::placeholder {
             color: #8A8A8A;
         }
+
         &:focus {
             outline: none !important;
             border: 2px solid #009FD3;
@@ -1036,6 +1044,7 @@ a {
         padding: 16px 40px;
         margin-top: 15px;
         transition: all 200ms linear;
+
         &:hover {
             background: #009FD3;
             color: #ffffff;
@@ -1055,9 +1064,11 @@ a {
 /*--- Our Policy -/Start ---*/
 .our-policy-section {
     padding-top: 160px;
+
     .our-policy-wrap {
         padding: 70px 116px;
     }
+
     .our-policy-list {
         gap: 16px;
     }
@@ -1066,6 +1077,7 @@ a {
 .pb-40 {
     padding-bottom: 40px;
 }
+
 .pb-50 {
     padding-bottom: 50px;
 }
@@ -1082,6 +1094,7 @@ a {
 .error-404-section {
     padding-top: 160px;
 }
+
 /*--- Error 404 -/End ---*/
 
 
