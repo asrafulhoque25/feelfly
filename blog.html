@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Favicon and touch icons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon.svg">
     <meta name="misapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <!-- Twitter Card data -->
@@ -36,7 +36,6 @@
     <meta name="google-site-verification" content="">
     <!-- Website title -->
     <title>Blog</title>
-    <link rel="stylesheet" href="assets/css/nioicon.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Local server Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
@@ -57,6 +56,7 @@
 
 
     <!-- header -->
+
     <header class="header" class="m-auto ">
         <nav class="navbar navbar-expand-xl py-3">
             <div class="container">
@@ -246,6 +246,120 @@
             </div>
         </nav>
     </header>
+
+
+
+    <!--sidebar -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header px-4 py-4">
+            <a href="index.html" class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                <img src="assets/img/sideMenu.svg" alt="">
+            </a>
+            <button class="bg-transparent border-0" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/img/sideBarClose.svg" alt="">
+            </button>
+        </div>
+        <div class="offcanvas-body px-0 border-top-d border-1">
+            <div class="sidebarBody d-flex flex-column justify-content-between h-100">
+                <div>
+                    <ul class="list-unstyled m-0 pt-0 pb-3 mt-3 px-4">
+                        <li class=" mb-3"><a href="#"
+                                class="text-decoration-none d-flex justify-content-between align-items-center sideMenuItem fs-6">
+                                Home <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.40002 11.6538L0.346191 10.6L4.94619 6.00002L0.346191 1.40002L1.40002 0.346191L7.05384 6.00002L1.40002 11.6538Z"
+                                            fill="#5D737A" />
+                                    </svg></span>
+                            </a></li>
+                        <li class=" mb-3"><a href="#"
+                                class="text-decoration-none d-flex justify-content-between align-items-center sideMenuItem fs-6">
+                                About Fellfly <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.40002 11.6538L0.346191 10.6L4.94619 6.00002L0.346191 1.40002L1.40002 0.346191L7.05384 6.00002L1.40002 11.6538Z"
+                                            fill="#5D737A" />
+                                    </svg></span>
+                            </a></li>
+                        <li class=" mb-3"><a href="#"
+                                class="text-decoration-none d-flex justify-content-between align-items-center sideMenuItem fs-6">
+                                Blog <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.40002 11.6538L0.346191 10.6L4.94619 6.00002L0.346191 1.40002L1.40002 0.346191L7.05384 6.00002L1.40002 11.6538Z"
+                                            fill="#5D737A" />
+                                    </svg></span>
+                            </a></li>
+                        <li class=" mb-3"><a href="#"
+                                class="text-decoration-none d-flex justify-content-between align-items-center sideMenuItem fs-6">
+                                Careers <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.40002 11.6538L0.346191 10.6L4.94619 6.00002L0.346191 1.40002L1.40002 0.346191L7.05384 6.00002L1.40002 11.6538Z"
+                                            fill="#5D737A" />
+                                    </svg></span>
+                            </a></li>
+                        <li class=" mb-3"><a href="#"
+                                class="text-decoration-none d-flex justify-content-between align-items-center sideMenuItem fs-6">
+                                Contact <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.40002 11.6538L0.346191 10.6L4.94619 6.00002L0.346191 1.40002L1.40002 0.346191L7.05384 6.00002L1.40002 11.6538Z"
+                                            fill="#5D737A" />
+                                    </svg></span>
+                            </a></li>
+                    </ul>
+                    <div class="border-top-d py-4">
+                        <div class="contact-info px-4 mt-2">
+                            <div class="mb-3">
+                                <p class="text-clr-deepBlue fs-12 fw-bold mb-0">Phone</p>
+                                <a href="tel:+88 012 458 368" class="text-clr-teal fs-5 text-decoration-none">+88 012
+                                    458 368</a>
+                            </div>
+                            <div class="mb-3">
+                                <p class="text-clr-deepBlue fs-12 fw-bold mb-0">Email Address</p>
+                                <a href="mailto:hello@feelfly.com"
+                                    class="text-clr-teal fs-5 text-decoration-none">hello@feelfly.com</a>
+                            </div>
+                            <div class="mb-1">
+                                <p class="text-clr-deepBlue fs-12 fw-bold mb-0">Feelfly Address</p>
+                                <a href="#" class="text-clr-teal fs-5 text-decoration-none">4140 Parker Rd. Allentown
+                                    New
+                                    Mexico 31134</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top-d">
+                        <div class="sidebar-social px-4 mt-4">
+                            <ul class="list-unstyled d-flex align-items-center gap-3">
+                                <li><a href="#" class="text-decoration-none"><img src="assets/img/social1.svg"
+                                            class="img-fluid" alt=""></a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none"><img src="assets/img/social2.svg"
+                                            class="img-fluid" alt=""></a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none"><img src="assets/img/social3.svg"
+                                            class="img-fluid" alt=""></a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none"><img src="assets/img/social4.svg"
+                                            class="img-fluid" alt=""></a>
+                                </li>
+                                <li><a href="#" class="text-decoration-none"><img src="assets/img/social5.svg"
+                                            class="img-fluid" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 mb-4">
+                    <button type="button"
+                        class="bg-clr-deepBlue w-100 h-52 border-0 px-4 py-2 rounded-pill text-white fw-semi-bold">Contact
+                        Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--/ header -->
 
 
@@ -256,12 +370,12 @@
         <div class="container">
             <div class="sub-banner-content d-flex justify-content-center align-items-center flex-column">
                 <h2 class="fs-48 fw-medium text-white mb-3">
-                    Feelfly Blog
+                    Blog
                 </h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item text-clr-blueLight fs-5 px-0">Home</li>
-                        <li class="breadcrumb-item text-clr-blueLight fs-5 px-0 active">Blog</li>
+                        <li class="breadcrumb-item text-clr-lightBlue fs-18 px-0">Home</li>
+                        <li class="breadcrumb-item text-clr-lightBlue fs-18 px-0 active">Blog</li>
                     </ol>
                 </nav>
             </div>

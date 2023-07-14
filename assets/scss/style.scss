@@ -474,10 +474,7 @@ a {
     }
 
     &.single-blog {
-        background-image: none;
-
         .sub-banner-content {
-            min-height: 630px;
             padding-top: 170px;
         }
     }
@@ -683,7 +680,7 @@ a {
 
 // single-blog =start
 .featured-img {
-    margin-top: -300px;
+    margin-top: -150px;
 }
 
 //.blog-content-wrapper
@@ -798,8 +795,23 @@ a {
             left: 125%;
         }
     }
-
-
 }
 
 // travel-wrap = End
+
+
+// breadcrumb
+.breadcrumb {
+    .breadcrumb-item {
+        &.active {
+            color: var(--lightBlue);
+        }
+
+        &::before {
+            color: var(--lightBlue) !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+// breadcrumb = End

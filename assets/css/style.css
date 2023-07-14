@@ -141,8 +141,7 @@ a:hover { color: #009fd3; }
 
 .sub-banner { background-image: url(../img/subpage-bg.png); background-repeat: no-repeat; background-size: auto; background-position: bottom center; }
 .sub-banner .sub-banner-content { min-height: 500px; }
-.sub-banner.single-blog { background-image: none; }
-.sub-banner.single-blog .sub-banner-content { min-height: 630px; padding-top: 170px; }
+.sub-banner.single-blog .sub-banner-content { padding-top: 170px; }
 
 .button { position: relative; overflow: hidden; z-index: 1; -webkit-transition: 0.2s all linear; transition: 0.2s all linear; }
 .button::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: -2; }
@@ -188,7 +187,7 @@ a:hover { color: #009fd3; }
 @keyframes draw { 0% { stroke-dashoffset: 4500; }
   100% { stroke-dashoffset: 0; } }
 /*loading - END*/
-.featured-img { margin-top: -300px; }
+.featured-img { margin-top: -150px; }
 
 .blog-content-wrapper .content-inner-list { max-width: 890px; margin: 60px auto; }
 .blog-content-wrapper .content-inner-list .inner-list { list-style: none; }
@@ -208,3 +207,5 @@ a:hover { color: #009fd3; }
 .tourpack-item:hover .pack-img::before { -webkit-animation: shine .75s; animation: shine .75s; }
 @-webkit-keyframes shine { 100% { left: 125%; } }
 @keyframes shine { 100% { left: 125%; } }
+.breadcrumb .breadcrumb-item.active { color: var(--lightBlue); }
+.breadcrumb .breadcrumb-item::before { color: var(--lightBlue) !important; padding: 0 !important; }
