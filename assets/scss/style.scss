@@ -37,6 +37,11 @@ body {
     --yellow: #f8d448;
     --gray: #5d737a;
     --danger: #ff2e00;
+    --dark-1: #0D1525;
+    --dark-2: #4B566B;
+    --purple: #0052CC;
+
+
 }
 
 /* reset, root - END */
@@ -93,6 +98,31 @@ body {
     color: var(--danger);
 }
 
+.text-clr-dark-1 {
+    color: var(--dark-1);
+}
+
+.text-clr-dark-2 {
+    color: var(--dark-2);
+}
+
+.text-clr-purple {
+    color: var(--purple);
+}
+
+.text-clr-dark1 {
+
+    color: var(--dark1);
+}
+
+.text-clr-dark-2 {
+    color: var(--dark2);
+}
+
+.text-clr-purple {
+    color: var(--purple);
+}
+
 // BG color
 .bg-clr-teal {
     background-color: var(--teal);
@@ -126,7 +156,19 @@ body {
     background-color: var(--danger);
 }
 
-.fs-12 {
+.bg-clr-dark-1 {
+    color: var(--dark-1);
+}
+
+.bg-clr-dark-2 {
+    color: var(--dark-2);
+}
+
+.bg-clr-purple {
+    background-color: var(--purple);
+}
+
+>>>>>>>8d1b11677f3e03e96e9a473fbeae1a716aa25e76 .fs-12 {
     font-size: 12px;
 }
 
@@ -156,6 +198,10 @@ body {
 .fs-54 {
     font-size: 54px;
     line-height: 3.37rem;
+}
+
+.letter-spacing24 {
+    letter-spacing: 2.4px;
 }
 
 .fw-medium {
@@ -595,6 +641,23 @@ a {
 
 /* line short - END*/
 
+// VISA GUIDE PAGE /-START
+#apply-schengen {
+    background-image: url(../img/bg-plane.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    .apply-right-content {
+        .item {
+            h5 {
+                border-bottom: 1px solid #0D1525;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+// VISA GUIDE PAGE /-END
 
 
 /*loading  - start*/
@@ -679,6 +742,9 @@ a {
         stroke-dashoffset: 0;
     }
 }
+
+
+/*loading - END*/
 
 /*loading - END*/
 
@@ -804,7 +870,6 @@ a {
 
 // travel-wrap = End
 
-
 // breadcrumb
 .breadcrumb {
     .breadcrumb-item {
@@ -815,8 +880,38 @@ a {
         &::before {
             color: var(--lightBlue) !important;
             padding: 0 !important;
-        }
-    }
-}
 
-// breadcrumb = End
+            /*--- Contact Us -/Start ---*/
+            .social-icons-inner-wrap {
+                gap: 30px;
+
+                @media (max-width: 992px) {
+                    gap: 20px;
+                }
+
+                a {
+                    svg * {
+                        transition: all 200ms linear;
+                    }
+
+                    &:hover {
+                        svg * {
+                            fill: #009fd3;
+                        }
+                    }
+                }
+            }
+
+            .contact-info-wrap {
+                gap: 50px;
+
+                .border-bottom-dark {
+                    margin-top: 10px;
+                    max-width: 433px;
+                    width: 100%;
+                    border-bottom: 1px solid #0D1525;
+                }
+            }
+
+
+            /*--- Contact Us -/End ---*/
