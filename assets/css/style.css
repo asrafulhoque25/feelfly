@@ -202,6 +202,12 @@ a:hover { color: #009fd3; }
 
 #visa-eligibility { background-image: url(../img/visa-eligibility-bg.svg); background-repeat: no-repeat; background-position: bottom center; }
 
+#relevent-costs .relevent-costs-wrapper { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 30px; }
+#relevent-costs .relevent-costs-wrapper .relevent-cost-item { border-radius: 4px; -webkit-box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.05); box-shadow: 0px 30px 30px 0px rgba(0, 52, 69, 0.05); padding: 20px; background-color: #FFFFFF; }
+@media (max-width: 992px) { #relevent-costs .relevent-costs-wrapper { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 768px) { #relevent-costs .relevent-costs-wrapper { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 576px) { #relevent-costs .relevent-costs-wrapper { grid-template-columns: 1fr; } }
+
 /*loading  - start*/
 #introduction { width: 100vw; height: 100vh; position: fixed; z-index: 105; background-color: #141414; cursor: pointer; overflow: hidden; top: 0; left: 0; z-index: 99999; }
 
